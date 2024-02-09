@@ -1,10 +1,11 @@
 ##INTRODUCTION TO R####
-##JSG, 7/2/22
+## Zaniah
 
 #this is a broad introduction to how R works and what it can do
 #we'll return to individual topics in later sessions (both theory and practice)
 
-#Things to know about R (General information):####
+#Things to know about R (General informati
+on):####
 
 # R is a programming language, and as such it can be annoying to use at first (steep
 #learning curve). However,it's free, extremely powerful, and replicable (you can 
