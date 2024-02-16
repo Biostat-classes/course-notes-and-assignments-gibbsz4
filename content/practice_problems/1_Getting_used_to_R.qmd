@@ -185,6 +185,19 @@ RUN EACH OF THESE COMMANDS. Then state what each of these does.
 
 ### *The first creates a sequence from -1 to 2 by ones.*
 
+```{r}
+(-1):2
+```
+
+*The first creates a sequence from -1 to 2 by ones*
+
+```{r}
+-(1:2)
+```
+
+*The second does the same. The third creates a sequence from 1 to 2 then
+applies a negative to it.*
+
 ### Data input, plotting, and tests
 
 You can read in a dataset from the internet following this protocol.
@@ -196,6 +209,8 @@ sleep <- read.csv("http://raw.githubusercontent.com/jsgosnell/CUNY-BioStats/mast
 Run this chunk and note it has added an object named `sleep` to the
 environment.
 
+This chunk has added an object named `sleep` to the environment.
+
 Info on the dataset is viewable \@
 <http://www.statsci.org/data/general/sleep.html>.
 
@@ -206,12 +221,29 @@ of data is stored in each variable?
 
 ENTER ANSWERS HERE. ADD ANY R CHUNKS YOU USED TO FIND THE ANSWER.
 
+```{r}
+dim(sleep)
+```
+
+The sleep data set has 62 : 12 rows.
+
+```{r}
+str(sleep)
+```
+
+*the str function returns the size of the dataset and the class of each
+column.*
+
 #### 5
 
 Change the column named *BodyWt* to *Body_weight*"\* in the sleep
 dataset.
 
 ADD ANY R CHUNKS YOU USED TO COMPLETE THE TASK.
+
+```{r}
+names(sleep)[names(sleep) %in% "BodyWt"] <- "Body_weight"
+```
 
 #### 6
 
