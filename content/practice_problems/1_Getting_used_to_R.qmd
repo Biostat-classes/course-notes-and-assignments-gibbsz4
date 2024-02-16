@@ -281,6 +281,15 @@ NOTE YOU CAN ADD A PLOT TO THE DOCUMENT TOO! AMEND THE BELOW AS NEEDED.
 plot(cars)
 ```
 
+```{r}
+plot(TotalSleep ~ Primate, sleep)
+```
+
+```{r}
+plot(TotalSleep ~ factor(Primate), sleep, main = "Variance in sleep differs between primates and non-primates", 
+     xlab = "Primate", ylab = "Total sleep (hours)")
+```
+
 #### 7
 
 The **sleep** dataset begs to have a linear model fit for it. Let's
@@ -290,6 +299,25 @@ model to obtain the p-value for the model (hint: summary()). What does
 this imply?
 
 ENTER ANSWERS HERE. ADD ANY R CHUNKS YOU USED TO FIND THE ANSWER.
+
+```{r}
+plot(TotalSleep ~ BrainWt, sleep)
+```
+
+*We have few measurements where BrainWt \>1000, so let's exclude those
+for the model.*
+
+```{r}
+sleep_fit <- lm(TotalSleep ~ BrainWt, sleep[sleep$BrainWt<1000,])
+summary(sleep_fit)
+```
+
+*It appears that TotalSleep decreases as BrainWt increases.*
+
+```{r}
+plot(TotalSleep ~ BrainWt, data = sleep[sleep$BrainWt <  1000, ])
+abline(sleep_fit)
+```
 
 ### EXTRA QUESTIONS
 
