@@ -22,6 +22,10 @@ file)](../Primer_material/R_primer.R). You should also be comfortable
 using Rstudio and github [(see help
 file)](../Primer_material/Tools_overview.qmd).
 
+```{r}
+
+```
+
 #### Rmd basics
 
 Rmd files differ from R files in that they combine regular text with
@@ -136,7 +140,17 @@ Now try to guess the output of these commands
 
 INSERT AN R CHUNK HERE AND RUN EACH OF THESE COMMANDS. Add a new chunk
 by clicking the *Insert Chunk* button on the toolbar or by pressing
-*Ctrl+Alt+I*. Then state what each of these does.
+*Ctrl+Alt+I*. Then state what each of these
+
+```{r}
+length(x)
+```
+
+length returns the number of items.
+
+```{r}
+max(x)
+```
 
 #### 3
 
