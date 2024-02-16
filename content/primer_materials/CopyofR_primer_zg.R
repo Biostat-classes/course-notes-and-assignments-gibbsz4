@@ -118,7 +118,7 @@ x
 
 #YOUR FIRST FUNCTION####
 #now lets go back to the class thing and use our first function#
-class(x)
+
 #class (above) is the first recognizable function you've used.  A function is a set of code
 #that has been given a name (saved as an  object).  The code states what type of input
 #(parameters or values, x in the case above) the code needs to run and produce some type of
@@ -211,7 +211,7 @@ x >= y
 # some useful functions
 
 #making a random number set for illustration
-x <- rnorm( 1000, 1, 1)
+
 #remember above notation is lazy (not specifying what every parameter is actually being
 #used for in the function).  you can also write
 x <- rnorm (n = 1000, mean = 1, sd = 1)
@@ -325,7 +325,7 @@ str(airquality)
 # factor, not an integer). if you don't fix this R may run the wrong analyses (e.g.,
 # a regression when you want an ANOVA).
 
-airquality$Month <- as.factor(airquality$Month)
+
 #similar commands exist (as.integer, as.numeric) for other classes.note how you use
 #this as it may give unusual results. For example, if you turn factor levels into numbers
 #they will go fro 1 up g (total # of levels) based on the order R had them in (often
