@@ -110,6 +110,8 @@ Let x be defined by
 x <- 5:15
 ```
 
+*create a sequence counting by 1's from a to b (in a:b)*
+
 Try executing this chunk (in R studio, not the webview) by clicking the
 *Run* button within the chunk or by placing your cursor inside it and
 pressing *Ctrl+Shift+Enter*.
@@ -152,10 +154,36 @@ length returns the number of items.
 max(x)
 ```
 
+#### **returns the highest value**
+
+```{r}
+x[x < 10]
+```
+
+#### *Allows you to return (or work with) only portions of a vector.*
+
+```{r}
+x^2
+```
+
+*x\^2 squares a value.*
+
+```{r}
+x[ x < 12 & x > 7]
+```
+
+#### *square brackets allows you to return (or work with) only portions of a vector.*
+
 #### 3
 
 Is `-1:2` the same as `(-1):2` or `-(1:2)`? INSERT AN R CHUNK HERE AND
 RUN EACH OF THESE COMMANDS. Then state what each of these does.
+
+```{r}
+-1:2
+```
+
+### *The first creates a sequence from -1 to 2 by ones.*
 
 ### Data input, plotting, and tests
 
